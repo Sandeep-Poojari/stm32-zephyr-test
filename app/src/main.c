@@ -1,10 +1,11 @@
 #include <zephyr/kernel.h>
-#include <zephyr/sys/printk.h>
 
 void main(void)
 {
+    volatile int alive = 0;
+
     while (1) {
-        printk("STM32 Zephyr test app running\n");
+        alive++;
         k_sleep(K_SECONDS(1));
     }
 }
