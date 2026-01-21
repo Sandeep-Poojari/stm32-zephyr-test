@@ -1,11 +1,12 @@
 #include <zephyr/kernel.h>
+#include <zephyr/sys/printk.h>
 
 void main(void)
 {
-    volatile int alive = 0;
+    printk("Zephyr is alive\n");
 
     while (1) {
-        alive++;
+        printk("tick\n");
         k_sleep(K_SECONDS(1));
     }
 }
