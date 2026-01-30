@@ -9,6 +9,7 @@ target_include_directories(app PRIVATE
 
 target_sources(app PRIVATE
     src/main.c
+    src/buttons/buttons.c
     src/os/threads.c
     src/services/system_service.c
 )

@@ -8,6 +8,7 @@ void main(void)
 
     system_service_init();
     threads_start();
+    button_init();
 
     while (1) {
         printk("[main]:uptime: %llu ms\n", k_uptime_get());
